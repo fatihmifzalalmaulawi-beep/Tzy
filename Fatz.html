@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all sosmed fatz!?</title>
+    <!-- Import Font dan Icon FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .name {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .bio {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+        }
+
+        /* Warna Tombol Sosial Media */
+        .tiktok {
+            background-color: #000000;
+            border: 1px solid #333;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .whatsapp {
+            background-color: #25D366;
+        }
+
+        .link-card i {
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- FOTO PROFIL -->
+        <img src="https://cdn.phototourl.com/member/2026-09-25-ea57ec14-cb69-4820-9e0c-df3bf1edf6b8.jpg" alt="Foto Profil" class="profile-img">
+
+        <!-- Nama Utama & Bio -->
+        <h1 class="name">all sosmed fatz!?</h1>
+        <p class="bio">Welcome to my official links! 👇</p>
+
+        <!-- Daftar Link Sosial Media -->
+        <div class="links-container">
+            
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@_27.fatzx" target="_blank" rel="noopener noreferrer" class="link-card tiktok">
+                <i class="fa-brands fa-tiktok"></i> TikTok: @_27.fatzx
+            </a>
+
+            <!-- Instagram (Menggunakan fungsi JavaScript seperti sebelumnya) -->
+            <a onclick="openInstagram()" class="link-card instagram">
+                <i class="fa-brands fa-instagram"></i> Instagram: @ftzy_123
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://api.whatsapp.com/send?phone=6285210331383&text=Halo,%20saya%20dapat%20nomor%20ini%20dari%20website" target="_blank" rel="noopener noreferrer" class="link-card whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Chat via WhatsApp
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Script Instagram Versi Sebelumnya -->
+    <script>
+        function openInstagram() {
+            var username = "ftzy_123";
+            var appUrl = "instagram://user?username=" + username;
+            var webUrl = "https://www.instagram.com/" + username;
+
+            // Mencoba membuka ke aplikasi Instagram secara langsung
+            window.location.href = appUrl;
+
+            // Jika aplikasi tidak merespons dalam 1 detik, dialihkan ke browser Web
+            setTimeout(function() {
+                window.location.href = webUrl;
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>
